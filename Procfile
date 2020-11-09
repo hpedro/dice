@@ -1,1 +1,1 @@
-web: pip install . -U && dices-run
+web: pip install . -U && diceshpedro-run
