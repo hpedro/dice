@@ -49,6 +49,8 @@ def clean_data(data):
     return data
 
 def throw_dice():
+    """Throws a 6 faced dice
+    """
     return random.randint(1, 6)
 
 
