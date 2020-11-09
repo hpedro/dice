@@ -6,6 +6,7 @@
 from os.path import split
 import pandas as pd
 import datetime
+import random
 
 pd.set_option('display.width', 200)
 
@@ -46,6 +47,9 @@ def clean_data(data):
              7: '1/trimestre', 8: 'Less', 9: 'Never'}
     data.loc[:, 'Frequency'] = data['Frequency'].map(drows)
     return data
+
+def throw_dice():
+    return random.randint(1, 6)
 
 
 if __name__ == '__main__':
